@@ -40,6 +40,7 @@ print(f"Cell Nominal Power (1C): {Q_nominal * V_nominal:.2f} W\n")
 # ==========================================
 # 2. Temperature vs. Time (Original 2D Plot)
 # ==========================================
+
 print("Generating 2D Transient Response Plot...")
 fig_2d = plt.figure(figsize=(10, 6))
 time_secs = np.linspace(0, 3600, 200) # 1 hour
@@ -78,6 +79,7 @@ plt.close(fig_2d)
 # ==========================================
 # 3. 3D Thermal Envelope (Original)
 # ==========================================
+
 print("Generating 3D Thermal Envelope Plot...")
 fig_3d = plt.figure(figsize=(14, 10))
 ax = fig_3d.add_subplot(111, projection='3d')
